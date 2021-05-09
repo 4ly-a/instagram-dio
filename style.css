@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap"); /* Font = Courgette */
+
+:root {
+  --bg-grey: rgb(243, 243, 243);
+  --bg-white: #fff;
+  --bg-black: rgb(184, 184, 184);
+  --shadow-black: rgba(0, 0, 0, 0.144);
+  --bg-blue: rgb(49, 130, 236);
+  --bg-semi-white: rgb(235, 235, 235);
+  --bg-full-black: rgb(17, 17, 17);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  text-align: center;
+  background-color: var(--bg-grey);
+}
+
+.first-card-container {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  border-radius: 0.6rem;
+  min-width: 20em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background: var(--bg-white);
+  display: block;
+  margin: 1.8rem auto 1.5rem auto;
+  max-width: 30em;
+  box-shadow: var(--bg-shadow);
+  transition: 0.2s;
+}
+
+.logo {
+  opacity: 0;
+  animation: fadeInUp 0.6s forwards ease;
+  animation-delay: 0.5s;
+  font-family: "Courgette";
+  font-size: 3rem;
+}
+
+.form-container {
+  margin: 2em 4em;
+}
+
+form input {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--bg-black);
+  margin: 0.5rem 0;
+  width: 100%;
+  outline: none;
+  box-shadow: 1px 1px 3px var(--shadow-black);
+  background: var(--bg-grey);
+}
+
+form input.login {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 1s;
+}
+
+form input.senha {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 1.1s;
+}
+
+.form-button {
+  font-weight: bold;
+  cursor: pointer;
+  color: var(--bg-semi-white);
+  margin: 1.6rem auto;
+  padding: 0.9rem;
+  border-radius: 0.3rem;
+  border: none;
+  width: 100%;
+  background: var(--bg-blue);
+  transition: 0.3s;
+  box-shadow: var(--bg-shadow);
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 1.2s;
+}
+
+.form-button:hover {
+  transform: translateY(-5px);
+  background: rgb(27, 116, 231);
+}
+
+.or-line-container {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 2s;
+  color: rgba(0, 0, 0, 0.438);
+  margin: 0 0 3rem 0;
+}
+
+.or-line-container span {
+  /* position: absolute; */
+  transform: translateY(-6px);
+}
+
+.or-line-container p {
+  font-weight: bolder;
+}
+
+.facebook-conainer {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 2s;
+  justify-content: center;
+  margin: 0 auto 3rem 0;
+}
+
+.facebook-conainer button {
+  background: none;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  transition: 0.2s;
+}
+
+.facebook-conainer button:hover {
+  color: rgb(27, 116, 231);
+}
+
+.facebook-txt {
+  font-weight: bold;
+  margin-top: 0.3rem;
+  margin-left: 0.4rem;
+  font-size: 1rem;
+}
+
+.forgot-password {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 2.3s;
+  text-decoration: none;
+  color: var(--bg-full-black);
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.forgot-password:hover {
+  color: rgb(0, 47, 134);
+}
+
+.cadastro-container {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 2.6s;
+  border-radius: 0.6rem;
+  min-width: 20em;
+  padding-top: 1.2em;
+  padding-bottom: 1.2em;
+  background: var(--bg-white);
+  display: block;
+  margin: 1.8rem auto 1.5rem auto;
+  max-width: 30em;
+  box-shadow: var(--bg-shadow);
+}
+
+.cadastro-container a {
+  color: var(--bg-blue);
+  font-weight: bolder;
+}
+
+.app-container img {
+  width: 9em;
+  margin: 0 0.2rem;
+}
+
+.app-container p {
+  margin: auto auto 1rem;
+}
+.app-container {
+  opacity: 0;
+  animation: fadeIn 0.5s forwards ease;
+  animation-delay: 3s;
+  margin: 3rem auto;
+}
+
+footer {
+  color: var(--bg-grey);
+}
+
+.link-container a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.377);
+  margin: 1rem;
+  transition: 0.2s;
+  font-weight: 500;
+}
+
+.link-container li {
+  margin: 1rem;
+}
+
+.link-container a:hover {
+  color: rgba(0, 0, 0, 0.808);
+}
+
+.link-container {
+  margin: 1rem auto;
+}
+
+.bottom-footer {
+  text-align: center;
+  justify-content: center;
+  flex-direction: row;
+  display: flex;
+  margin: 3rem auto 3rem auto;
+}
+
+.bottom-footer p {
+  color: rgba(0, 0, 0, 0.575);
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+.seletor-idioma {
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.575);
+
+  outline: none;
+  background: none;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --bg-grey: rgb(243, 243, 243);
+    --bg-white: #fff;
+    --bg-black: rgb(184, 184, 184);
+    --shadow-black: rgba(0, 0, 0, 0.144);
+    --bg-blue: rgb(49, 130, 236);
+    --bg-semi-white: rgb(235, 235, 235);
+    --bg-full-black: rgb(17, 17, 17);
+  }
+
+  * {
+    overflow-x: hidden;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-container {
+    background: var(--bg-white);
+  }
+  .first-card-container {
+    margin-top: 0px;
+  }
+}
