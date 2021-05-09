@@ -1,4 +1,4 @@
-#Instagram clone
+# Instagram clone
 
 Esse projeto faz parte do bootcamp da digital innovation one 
 onde o objetivo é recriar a interface de login do instagram.
